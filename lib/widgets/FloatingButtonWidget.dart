@@ -1,4 +1,5 @@
 import"package:flutter/material.dart";
+import 'UserPage.dart';
 
 class FloatingButtonWidget extends StatelessWidget {
   const FloatingButtonWidget({super.key});
@@ -12,8 +13,9 @@ class FloatingButtonWidget extends StatelessWidget {
       body: Text("data"),
         floatingActionButton: FloatingActionButton(
           onPressed:() {
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text("Floating Action Button Pressed"))
+            Navigator.push(
+                context,MaterialPageRoute(builder: (context)=> UserPage())
+
             );
           },
           child: Icon(Icons.add),
