@@ -14,8 +14,8 @@ class FloatingButtonWidget extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           onPressed:() {
             Navigator.push(
-                context,MaterialPageRoute(builder: (context)=> UserPage())
-
+                context,MaterialPageRoute(
+                builder: (context)=> UserPage())
             );
           },
           child: Icon(Icons.add),

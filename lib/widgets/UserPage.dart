@@ -1,4 +1,4 @@
-import "package:flutter/material.dart";
+ import "package:flutter/material.dart";
 
 class UserPage extends StatelessWidget {
   const UserPage({super.key});
@@ -6,7 +6,29 @@ class UserPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("This is User space"),
+      appBar: AppBar(backgroundColor: Colors.yellow,
+      title: Center(child:Text("Add your task")),),
+      body:
+      Center(
+        child: Column(
+          children: [
+            TextField(decoration: InputDecoration(
+              hintText: "Add a new project",
+              border: OutlineInputBorder()
+            ),),
+            TextField(decoration: InputDecoration(
+                hintText: "Add a new project Description",
+                border: OutlineInputBorder()
+            ),),
+          ],
+        ),
+      ),
+
+
+
+
+
+
     );
   }
 }
